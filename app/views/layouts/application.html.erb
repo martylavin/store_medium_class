@@ -1,0 +1,383 @@
+
+
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Uncomment to make IE8 render like IE7 -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/custom.modernizr" %>
+    <%= csrf_meta_tags %>
+    <link type="text/css" media="screen" rel="stylesheet" href="responsive-tables.css" />
+    <script type="text/javascript" src="responsive-tables.js"></script>
+    <script type="text/javascript" src="marty-test.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+
+  </head>
+
+  <body>
+
+<!-- separate the two sections -->
+
+<p id="demo"></p>
+
+
+ <!--<script>
+
+var x, y, z;
+x = 5
+y = 6;
+z = (x + y) * 10;
+ document.getElementById("demo").innerHTML = z; 
+
+</script>
+-->
+
+
+ <!-- <SCRIPT LANGUAGE="JavaScript">
+    document.write("<IMG ALIGN='center' "+
+                    "SRC='http://www.dickinson.edu/~braught/courses/cs131s99/Images/die3.gif'> " +
+                   "<BR><BR>"); 
+    document.write("<IMG ALIGN='center' "+
+                    "SRC='/assets/launch-orbit.jpg'> " +
+                   "<BR><BR>"); 
+  </SCRIPT> 
+-->
+
+
+<nav class="top-bar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><%= link_to "Awesome Store", products_path %></a></h1>
+    </li>
+  </ul>
+  <section class="top-bar-section">
+    <ul class="right">
+      <li class="divider"></li>
+      <li><%= link_to "Browse Products", products_path %></li>
+      <li class="divider"></li>
+      <li><%= link_to "Price List" %></li>
+      <li class="divider"></li>
+      <li><%= link_to "Contact Us" %></li>
+      <li class="divider"></li>
+      <li><%= link_to "Cart" %></li>
+    </ul>
+  </section>
+</nav>
+
+
+
+<div class="row" data-equalizer>
+  <div class="large-8 medium-7 columns data-equalizer-watch" ><%= yield %></div>
+  <div class="large-4 medium-5 columns data-equalizer-watch">
+    <div class = "panel">
+    <h2 class="subheader">About Us Panel  Large </h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation estupido gorda.
+  </div>
+  </div>
+</div>
+
+<hr>
+
+ <div class="row">
+   <div class="large-4 columns">
+    <h2 class="subheader">About Us today  Large </h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+    <div class="large-4 columns">
+    <h2 class="subheader">About Us till the end of time  Large </h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+
+  <div class="large-4 columns">
+    <h2 class="subheader">Me Me Me Me Me About Us and Mee  Large </h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+</div>
+
+<hr>
+<hr>
+
+ <div class="row">
+   <div class="medium-4 columns">
+    <h2 class="subheader">About Us today   Medium </h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+    <div class="medium-4 columns">
+    <h2 class="subheader">About Us till the end of time   Medium </h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+
+  <div class="medium-4 columns">
+    <h2 class="subheader">Me Me Me Me Me About Us and Mee   Medium </h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+</div>
+ 
+ <hr>
+ <hr>
+
+  <div class="row">
+   <div class="small-4 columns">
+    <h2 class="subheader">About Us today   Small </h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+    <div class="small-4 columns">
+    <h2 class="subheader">About Us till the end of time   Small </h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+
+  <div class="small-4 columns">
+    <h2 class="subheader">Me Me Me Me Me About Us and Mee   Small </h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+</div>
+
+<hr>
+<hr>
+
+<div class="row">
+  <div class="small-8 columns"><h2 class="subheader">8 </h2>8  xxxx Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumxxx
+    <div class="row">
+      <div class="small-8 columns"><h2 class="subheader">8 nested</h2>8  xxxx Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumxxx
+        <div class="row">
+          <div class="small-8 columns"><h2 class="subheader">8 nested again</h2>8  xxxx Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumxxx</div>
+          <div class="small-4 columns"><h2 class="subheader">4 or four</h2></div>
+        </div>
+      </div>
+      <div class="small-4 columns"><h2 class="subheader">4 or four</h2></div>
+    </div>
+  </div>
+  <div class="small-4 columns"><h2 class="subheader">4 or four</h2></div>
+</div>
+
+<hr>
+
+<div class="progress large-# radius round">
+  <div class="progress small-# success radius round">
+  <span class="meter" style="width: 50%"></span>
+</div>
+</div>
+
+
+<div class="progress small-# success radius round">
+  <span class="meter" style="width: 30%"></span>
+</div>
+
+<hr>
+
+  <div class="row">
+    <div class="large-12 columns">
+  
+      <div class="hide-for-small">
+        <div id="featured">
+       
+<ul class="example-orbit" data-orbit>
+  <li>
+    <%= image_tag "satelite-orbit.jpg", :alt => "slide 1"%>
+    <div class="orbit-caption">
+      Caption One.
+    </div>
+  </li>
+  <li class="active">
+    <%= image_tag "andromeda-orbit.jpg", :alt => "slide 2"%>
+    <div class="orbit-caption">
+      Caption Two.
+    </div>
+  </li>
+  <li>
+    <%= image_tag "launch-orbit.jpg", :alt => "slide 3"%>
+    <div class="orbit-caption">
+      Caption Three.
+    </div>
+  </li>
+</ul>
+               
+          </div>
+        </div>
+ <!--<hr>
+     <div class="flex-video">
+        <iframe width="420" height="315" src="//www.youtube.com/embed/aiBt44rrslw" frameborder="0" allowfullscreen></iframe>
+     </div>
+ -->
+ 
+     <hr>
+ <hr>
+     <div class="flex-video">
+        <iframe width="420" height="315" src="//www.youtube.com/embed/TVz6zbCmvPg" frameborder="0" allowfullscreen></iframe>
+     </div>
+ 
+ 
+ <hr>
+
+
+    <div class="row">
+      <div class="small-12 show-for-small"><br>
+        <img src="http://placehold.it/1000x600&text=For Small Screens"/>
+      </div>
+    </div>
+ 
+  
+    </div>
+  </div><br>
+ 
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="row">
+ 
+     
+ 
+        <div class="large-3 small-6 columns">
+          <img src="https://s3.amazonaws.com/uifaces/faces/twitter/BillSKenney/128.jpg" width="220" height="250"> 
+          <h6 class="panel"> Clown</h6>
+        </div>
+ 
+        <div class="large-3 small-6 columns">
+        <%= image_tag "First_Day_copy.jpg", :alt => "slide 3"%>
+          <h6 class="panel">Little Mary Lavin at school.</h6>
+        </div>
+      
+        <div class="large-3 small-6 columns">
+          <%= image_tag "andromeda-orbit.jpg", :alt => "slide 2"%>
+             <%= image_tag "satelite-orbit.jpg", :alt => "slide 1"%>
+             <%= image_tag "launch_copy.jpg", :alt => "slide 3"%>
+          <h6 class="panel">Space Pictures</h6>
+        </div>
+ 
+        <div class="large-3 small-6 columns">
+         <%= image_tag "Crazy_Hair.jpg", :size => "220x250", :alt => "slide 2"%>
+          <h6 class="panel">Funny Crazy Hair day too cute!!</h6>
+        </div>
+ 
+ 
+      </div>
+    </div>
+  </div>
+ 
+ 
+ 
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="row">
+ 
+        <div class="large-8 columns">
+          <div class="panel radius">
+ 
+          <div class="row">
+          <div class="large-6 small-6 columns">
+ 
+            <h4>Header</h4><hr/>
+            <h5 class="subheader">Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis.
+            </h5>
+ 
+          <div class="show-for-small" align="center">
+            <a href="#" class="small radius button">Call To Action!</a><br>
+ 
+            <a href="#" class="small radius button">Call To Action!</a>
+          </div>
+ 
+          </div>
+          <div class="large-6 small-6 columns">
+ 
+            <p>Suspendisse ultrices ornare tempor. Aenean eget ultricies libero. Phasellus non ipsum eros. Vivamus at dignissim massa. Aenean dolor libero, blandit quis interdum et, malesuada nec ligula. Nullam erat erat, eleifend sed pulvinar ac. Suspendisse ultrices ornare tempor. Aenean eget ultricies libero.
+          </p>
+        </div>
+ 
+        </div>
+        </div>
+        </div>
+ 
+          <div class="large-4 columns hide-for-small">
+ 
+          <h4>Get In Touch!</h4><hr/>
+ 
+          <a class="large button expand" href="#">
+            Call To Action!
+          </a>
+ 
+          <a class="large button expand" href="#">
+            Call To Action!
+          </a>
+  
+        </div>
+ 
+      
+      </div>
+    </div>
+  </div>
+ 
+     
+  <div class="row">
+    <div class="large-12 columns">
+       <div class = "panel">
+        <h2> Header Mart1 </h2>
+
+        <span style="color:blue">The value of the width x = </span>
+        <span style="color:blue" id="p_xvalue"> The value of x = </span>
+        <p id="p_large"> cat_large.jpg large screen test</p>
+        <img id="myImage" src="/assets/cat_large.jpg">
+       
+          
+       <script>
+        var w=window,d=document,e=d.documentElement,g=d.getElementsByTagName('body')[0],x=w.innerWidth||e.clientWidth||g.clientWidth,y=w.innerHeight||e.clientHeight||g.clientHeight;
+
+            //function myFunction() {alert("myFuncition was called by farty marty")};
+            
+            document.getElementById("myImage").src = "/assets/launch_copy.jpg";
+            document.getElementById("p_large").innerHTML = "Hello World this quote1, was changed from just Hello World ";
+                     
+        if(x  < 640 ) {document.getElementById("myImage").src = "/assets/cat_small.jpg";
+            document.getElementById("p_large").innerHTML = "we are in the small zone less than  640 <br> ";
+            document.getElementById("p_xvalue").innerHTML = x;
+          }
+          else if(x >= 640 && x <= 1024) {document.getElementById("myImage").src = "/assets/cat_medium.jpg";
+            document.getElementById("p_large").innerHTML = "we are in the medium  zone lt 640 - 1024<br>";
+            document.getElementById("p_xvalue").innerHTML = x;
+          }
+          else {document.getElementById("myImage").src = "/assets/cat_large.jpg";
+            document.getElementById("p_large").innerHTML = "We are in the large zone greater than 1024";
+            document.getElementById("p_xvalue").innerHTML = x;
+          }
+          //document.write("  5 + 25 = " );
+          //myFunction()
+          //document.write("  5 + 25 = " + addThese(5, 25));
+          var mystring = "hello world marty";
+          console.log (mystring);
+
+      </script>
+
+    <br>
+
+        </div>
+    </div>
+</div>
+
+    <%= javascript_include_tag "application" %>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

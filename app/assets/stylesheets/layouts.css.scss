@@ -1,0 +1,78 @@
+ .tablestyle {
+   
+    color: white;
+    background-color: red;
+    width: 85%;
+    }
+
+
+.formfield * {
+    vertical-align: middle;
+}
+
+
+.mart-right {
+  padding-right: 5px;
+}
+
+.mart-left {
+  padding-left: 5px;
+}
+
+
+label.right {
+  padding-right: 10px;
+}
+
+.paper {
+    color: blue;
+    font-weight: bold;
+}
+
+
+.scissors {
+    color: orange;
+    font-weight: bold;
+}
+
+
+body {
+  background-image:url(Users/martinlavin/Jones_tutorial_4/store_test_two/app/assets/images/Birthday_Party.jpg);
+  color: #000;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default;
+}
+
+#top {
+    background-color: #ccc;
+    padding: 20px;
+    font-color: green;
+}
+
+.intro {
+    color: red;
+    font-weight: bold;
+}
+
+#bottom {
+    background-color: purple;
+    padding: 10px;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+
+.farty {
+    padding: 5px;
+    background-color: aqua;
+    color: green;
+    font-family: sans-serif;
+
+}

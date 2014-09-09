@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+
+	<title> Cascading Style Sheets </title>
+
+	<style>
+	body {
+	color: green;
+	font-weight: bold;
+	background-image: url(morning_dewdrop.jpg);
+	background-size:1930px 1050px;
+	background-repeat:no-repeat;
+	padding-top:40px;
+	}
+	
+	.boxelement1 {
+		border-color: Yellow;
+		background-color: grey;
+		border-style: solid;
+		line-height: 1.8em
+		border-width: 92px;
+		margin:225px;
+		padding:25px;
+	}
+
+
+
+	}
+
+
+	p {
+	color: purple;
+	}
+
+	.tableheader {
+	color: #ffffff;
+	background-color: #2A52BE;
+	}
+
+	.evenrows {
+	color: #fff8dc;
+	background-color: #654321;
+	}
+
+	.tablestyle {
+	font-family: times new roman, georgia, serif; 
+	color: purple;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #ffffff;
+	width: 55%;
+	border: 2px solid #2A52BE;
+	
+	caption-side: bottom;
+	}
+
+
+	h1, h2, em, b {
+	font-family: times new roman, georgia, serif  
+	}
+	a {
+	font-family: verdana, arial, sans-serif 
+	}
+
+	h1.orange {color: orange;}
+	h1.red {color: aqua;}
+
+	.sans_brown {color: aqua; font-size: 38px}
+	.violet1 {color: pink; font-size: 38px}
+	.justviolet {color: violet; font-size: 38px}
+	.teal {color: teal; font-size: 38px}
+	.navy {color: navy; font-size: 38px}
+
+	
+	</style>
+</head>
+
+
+<body>
+	Body text Hello Fatty Girl <br>
+
+	<span class="boxelement1"> This is random like text </span>
+	<hr>
+	<br>
+	<table class="tablestyle">
+		<caption> Customer Information </caption>
+		<tbody><tr class="tableheader">
+			<th>Name</th>
+			<th>Street</th>
+			<th>City</th>
+		</tr>
+
+		<tr>
+			<th>Mart Lavin</th>
+			<th>123 Main Street</th>
+			<th>Chicago</th>
+		</tr>
+
+		<tr class="evenrows">
+			<th>Paul Anderson</th>
+			<th>123 Main Street</th>
+			<th>City Limits </th>
+		</tr>
+	</tbody></table>
+
+
+
+
+	h1
+	<h1>H1 regular H1</h1>
+	<h1 class="orange"> THis should be in orange, THe class name is Orange howver.</h1>
+	<h1 class="violet1"> THis should be in pink and v ery big </h1>
+	<h1 class="justviolet"> THis should be in violet and v ery big </h1>
+	
+
+	<p>
+	<i> This is italic text for you </i><br>
+	This is </p><h1>H1</h1><br>
+	This is <h2>H2</h2><br>
+	THis is <a href="http://newthinktank.com/">AAAwsome</a><br>
+	<b>This is bold</b><br>
+	<p></p>
+
+	<div> Marty wants this to be yellow only if the div style is yellow. 
+Otherwise the color will be the default body color green. Currently the 
+div tag is not defined in the style sheet.
+		<p>This is a paragraph within a div 
+			</p><div> This should be yellow, a div inside a paragraph </div>
+		<p></p>
+	</div>
+
+	More body text from Mart
+
+	Block Elements: div, tables, header, footer, dl, form, hr, p, ol
+
+
+
+</body></html>

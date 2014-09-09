@@ -1,0 +1,84 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<div class="row collapse">
+<div class="small-9 small-offset-3 columns">
+  <h1> Product </h1>
+</div>
+</div>
+
+
+
+<!--
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+
+<span>
+  <strong>Price: </strong>
+  <%= @product.price %> <input type='text' name='fname' value= "<%= @product.price %>" readonly />
+</span>
+
+<p>
+  <strong>Price: </strong>
+  <%= @product.price %> <input type='text' name='fname' value= "<%= @product.price %>" readonly />
+</p>
+
+<input type='text' name='fname' value= "<%= @product.price %>" readonly  />
+
+<p class="formfield">
+    <label for="textarea">Label for textarea</label>
+    <textarea id="textarea" rows="2"><%= @product.price %></textarea>
+</p>
+
+
+
+<%= link_to 'Edit', edit_product_path(@product), class: "button radius small mart-left" %> |
+<%= link_to 'Back', products_path, class: "button radius small mart-right" %>
+
+-->
+
+<%= form_for(@product) do |f| %>
+  <% if @product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+      <% @product.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="row collapse">
+  <div class="small-3 columns">
+    <%= f.label :name, class: "right inline" %>
+  </div>
+  <div class="small-9 columns"><%= f.text_field :name %></div>
+</div>
+<div class="row collapse">
+  <div class="small-3 columns">
+    <%= f.label :price, class: "right inline bold", title: "Price in USD", data: {tooltip: true} %>
+  </div>
+  <div class="small-9 columns"><%= f.text_field :price %></div>
+</div>
+
+
+<div class="row collapse">
+<div class="small-9 small-offset-3 columns">
+	<%= link_to 'Edit', edit_product_path(@product), class: "button radius small mart-left" %> |
+	<%= link_to 'Back', products_path, class: "button radius small mart-right" %>
+</div>
+</div>
+
+
+<% end %>

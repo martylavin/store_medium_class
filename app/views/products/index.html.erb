@@ -1,0 +1,28 @@
+<h1>Listing products</h1>
+<table class="responsive">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Show</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.name %></td>
+        <td><%= product.price %></td>
+        <td><%= link_to 'Show', product, class: "small button radius" %></td>
+        <td><%= link_to 'Edit', edit_product_path(product), class: "small button radius" %></td>
+        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "small button radius tablestyle" %></td> 
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= link_to 'New Product', new_product_path, class: "small button radius" %>
+

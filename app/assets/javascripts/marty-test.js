@@ -1,0 +1,1 @@
+function myFunction() {alert("myFuncition was called by farty marty")}
